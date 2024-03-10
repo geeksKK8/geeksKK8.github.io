@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+
+<body style="margin: 0px;">
+    <p>射击小行星以获取分数，用WASD控制飞船移动，空格键射击，左shift和左ctrl键控制飞船旋转，ESC暂停</p>
+  <script type="module">
+    import init from './starship.js'
+
+    init().catch((error) => {
+      if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+        throw error;
+      }
+    });
+  </script>
+</body>
+
+</html>
